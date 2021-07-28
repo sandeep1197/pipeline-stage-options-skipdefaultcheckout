@@ -1,19 +1,24 @@
 pipeline {
     agent none
-    /*options { 
-	skipDefaultCheckout()
-    }  */ 
-
     stages {
         stage('Build') {
 			agent any
-			/*options { 
-				skipDefaultCheckout()  
-			} */
+		when {
+			branch 'master'
+		}
 
             steps {                
-                echo 'Hello World'
+                echo 'Building master branch'
             }
+	}
+		stage ('dev") {
+		       
+		when {
+			bramch 'dev'
+		}
+		       steps {
+			       echo "Building dev branch"
+		       }
+		       }
         }
     }
-}
