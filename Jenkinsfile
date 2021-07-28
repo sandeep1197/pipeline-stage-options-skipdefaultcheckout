@@ -14,7 +14,7 @@ pipeline {
 		stage ('dev') {
 		       
 		when {
-			bramch 'dev'
+			branch 'dev'
 		}
 		       steps {
 			       echo "Building dev branch"
