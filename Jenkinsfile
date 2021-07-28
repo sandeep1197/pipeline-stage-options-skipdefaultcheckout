@@ -11,7 +11,7 @@ pipeline {
                 echo 'Building master branch'
             }
 	}
-		stage ('dev") {
+		stage ('dev') {
 		       
 		when {
 			branch 'dev'
