@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
 			agent any
 		when {
-			buildingTag()
+			tag = "t1" 
 		}
 
             steps {                
