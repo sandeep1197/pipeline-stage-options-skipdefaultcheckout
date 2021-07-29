@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
 			agent any
 		when {
-		        tag = "t2"
+		        tag "release-*"
 		}
 
             steps {                
