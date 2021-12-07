@@ -6,7 +6,6 @@ pipeline {
                        /* options {
 		       skipDefaultCheckout()
                       } */
-		}
 
             steps {                
                 echo 'Building master branch'
@@ -14,4 +13,3 @@ pipeline {
 	}
 		
         }
-    }
