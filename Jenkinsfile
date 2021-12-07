@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Build') {
 			agent any
-		       #skipDefaultCheckout()
+                       /* options {
+		       skipDefaultCheckout()
+                      } */
 		}
 
             steps {                
