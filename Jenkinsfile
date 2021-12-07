@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Build') {
 			agent any
-		when {
-		        tag "release-*"
+		        skipDefaultCheckout()
 		}
 
             steps {                
